@@ -512,7 +512,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.footer-social-text {
+.footer-social-text,
+.footer-subscribe-text {
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 500;
@@ -653,4 +654,33 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.subscribe-form-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.subscribe-button {
+  display: flex;
+  gap: 16px;
+}
+
+.subscribe-button {
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  transition: color var(--anim-transition),
+    background-color var(--anim-transition), box-shadow var(--anim-transition);
+}
+
+.subscribe-icon {
+  fill: currentColor;
 }
