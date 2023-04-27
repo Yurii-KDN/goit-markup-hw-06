@@ -198,7 +198,7 @@ body {
   margin-left: auto;
   margin-bottom: 48px;
 }
-.hero-button {
+.order-button {
   display: block;
   min-width: 169px;
   border: none;
@@ -215,12 +215,13 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 
   transition: background-color var(--anim-transition);
 }
-.hero-button:hover,
-.hero-button:focus {
+.order-button:hover,
+.order-button:focus {
   background-color: var(--color-ocean);
 }
 
@@ -664,9 +665,7 @@ body {
 .subscribe-button {
   display: flex;
   gap: 16px;
-}
-
-.subscribe-button {
+  border: none;
   border-radius: 4px;
   padding: 8px 24px;
   font-weight: 500;
@@ -677,8 +676,12 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
 
-  transition: color var(--anim-transition),
-    background-color var(--anim-transition), box-shadow var(--anim-transition);
+  transition: background-color var(--anim-transition);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--color-ocean);
 }
 
 .subscribe-icon {
