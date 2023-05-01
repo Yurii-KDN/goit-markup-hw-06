@@ -383,6 +383,30 @@ body {
   border-color: var(--color-iris);
 }
 
+.modal-form-agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.modal-form-agreement-box {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+}
+
+.modal-form-agreement-text {
+  font-size: 12px;
+  letter-spacing: 0, 04em;
+  text-align: left;
+}
+.modal-form-agreement-link {
+  color: var(--color-iris);
+}
+
 /* Our features styles*/
 
 .visually-hidden {
