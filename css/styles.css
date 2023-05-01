@@ -343,6 +343,8 @@ body {
   top: 50%;
   left: 16px;
 
+  fill: var(--color-navy-blue);
+
   transform: translateY(-50%);
 
   transition: var(--anim-transition);
@@ -371,6 +373,14 @@ body {
   transition: var(--anim-transition);
 
   resize: none;
+}
+
+.modal-form-message::placeholder {
+  color: var(--color-navy-blue-modal);
+}
+
+.modal-form-message:focus {
+  border-color: var(--color-iris);
 }
 
 /* Our features styles*/
