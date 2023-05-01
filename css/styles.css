@@ -269,6 +269,7 @@ body {
 .modal-btn {
   display: flex;
   margin-left: auto;
+  margin-bottom: 24px;
   padding: 7px;
   width: 24px;
   height: 24px;
@@ -313,6 +314,63 @@ body {
   letter-spacing: 0.04em;
 
   transition: var(--anim-transition);
+}
+
+.modal-form-field {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 38px;
+
+  border: 1px solid;
+  border-color: var(--color-navy-blue-modal);
+  border-radius: 4px;
+  outline: none;
+
+  transition: var(--anim-transition);
+}
+
+.modal-form-input:focus {
+  border-color: var(--color-iris);
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+
+  transition: var(--anim-transition);
+  pointer-events: none;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--color-iris);
+}
+
+.modal-form-message {
+  margin-bottom: 16px;
+
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  max-height: 180px;
+  padding: 8px 16px;
+
+  font-size: 12px;
+  border: 1px solid;
+  border-color: var(--color-navy-blue-modal);
+  border-radius: 4px;
+  outline: none;
+
+  transition: var(--anim-transition);
+
+  resize: none;
 }
 
 /* Our features styles*/
