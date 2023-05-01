@@ -266,7 +266,7 @@ body {
   opacity: 0;
 }
 
-.modal-btn {
+.modal-close-btn {
   display: flex;
   margin-left: auto;
   margin-bottom: 24px;
@@ -287,9 +287,9 @@ body {
     background-color var(--anim-transition);
 }
 
-.modal-btn:hover,
-.modal-btn:focus,
-.modal-btn:active {
+.modal-close-btn:hover,
+.modal-close-btn:focus,
+.modal-close-btn:active {
   color: var(--color-white);
   background-color: var(--color-ocean);
 }
