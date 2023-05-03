@@ -638,7 +638,6 @@ body {
 .footer .container {
   display: flex;
   justify-content: flex-start;
-  /* gap: 120px; */
   align-items: baseline;
 }
 
@@ -693,9 +692,6 @@ body {
 .subscribe-form-wrapper {
   display: flex;
   gap: 24px;
-}
-
-.subscribe-form-field {
 }
 
 .subscribe-form-input {
