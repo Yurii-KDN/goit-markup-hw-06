@@ -7,7 +7,7 @@
   --color-light-slate: #8e8f99;
   --color-cornflower: #e7e9fc;
   --color-cloud: #f4f4fd;
-  --color-navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --color-navy-blue-modal: #2e2f4266;
   --color-grey: #2e2f42;
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
@@ -278,7 +278,7 @@ body {
   border: none;
   border: solid 1px;
   border-radius: 50%;
-  border-color: rgba(0, 0, 0, 0.1);
+  border-color: #0000001a;
   background-color: var(--color-cornflower);
   color: var(--color-navy-blue);
   cursor: pointer;
@@ -383,6 +383,9 @@ body {
 }
 
 .modal-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   color: var(--color-navy-blue-modal);
 }
 
@@ -392,7 +395,7 @@ body {
 
 .modal-form-agreement {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 8px;
 
@@ -400,14 +403,33 @@ body {
 }
 
 .modal-form-agreement-box {
-  appearance: none;
-  width: 16px;
-  height: 16px;
+  display: none;
+}
+
+.modal-form-agreement-unchecked {
+  transition: var(--anim-transition);
+}
+
+.modal-form-agreement-box:checked
+  + .modal-form-agreement-icon
+  > .modal-form-agreement-unchecked {
+  opacity: 0;
+}
+
+.modal-form-agreement-checked {
+  opacity: 0;
+  transition: var(--anim-transition);
+}
+
+.modal-form-agreement-box:checked
+  + .modal-form-agreement-icon
+  > .modal-form-agreement-checked {
+  opacity: 1;
 }
 
 .modal-form-agreement-text {
   font-size: 12px;
-  letter-spacing: 0, 04em;
+  letter-spacing: 0.04em;
   text-align: left;
 }
 .modal-form-agreement-link {
