@@ -394,6 +394,7 @@ body {
 }
 
 .modal-form-agreement {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -403,7 +404,8 @@ body {
 }
 
 .modal-form-agreement-box {
-  display: none;
+  appearance: none;
+  position: absolute;
 }
 
 .modal-form-agreement-unchecked {
@@ -635,8 +637,13 @@ body {
 
 .footer .container {
   display: flex;
-  gap: 120px;
+  justify-content: flex-start;
+  /* gap: 120px; */
   align-items: baseline;
+}
+
+.footer-text-content {
+  margin-right: 120px;
 }
 
 .footer .logo {
@@ -663,6 +670,10 @@ body {
   color: var(--color-white);
 }
 
+.footer-social-content {
+  margin-right: 80px;
+}
+
 .footer .social-list {
   gap: 16px;
 }
@@ -675,6 +686,73 @@ body {
 .footer .social-link:focus,
 .footer .social-link:active {
   background-color: var(--color-green);
+}
+
+/* Footer subscribe */
+
+.subscribe-form-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.subscribe-form-field {
+}
+
+.subscribe-form-input {
+  min-width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  background-color: transparent;
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+
+  border: 1px solid;
+  border-color: var(--color-white);
+  border-radius: 4px;
+  outline: none;
+
+  transition: var(--anim-transition);
+}
+
+.subscribe-form-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+}
+
+.subscribe-form-input:focus {
+  border-color: var(--color-iris);
+}
+
+.subscribe-button {
+  display: flex;
+  width: 164px;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-iris);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+
+  transition: background-color var(--anim-transition);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: var(--color-ocean);
+}
+
+.subscribe-icon {
+  fill: currentColor;
 }
 
 /* Portfolio */
@@ -794,35 +872,4 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.subscribe-form-wrapper {
-  display: flex;
-  gap: 16px;
-}
-
-.subscribe-button {
-  display: flex;
-  gap: 16px;
-  border: none;
-  border-radius: 4px;
-  padding: 8px 24px;
-  font-weight: 500;
-  color: var(--color-white);
-  background-color: var(--color-iris);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-
-  transition: background-color var(--anim-transition);
-}
-
-.subscribe-button:hover,
-.subscribe-button:focus {
-  background-color: var(--color-ocean);
-}
-
-.subscribe-icon {
-  fill: currentColor;
 }
